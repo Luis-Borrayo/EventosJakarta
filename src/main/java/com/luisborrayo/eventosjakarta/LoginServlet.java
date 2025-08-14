@@ -9,7 +9,6 @@ import models.Usuarios;
 import repositories.UserRepository;
 
 import java.io.IOException;
-import java.nio.file.attribute.UserPrincipal;
 import java.util.Optional;
 
 @WebServlet("/auth/login")
