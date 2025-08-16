@@ -1,6 +1,6 @@
-package repositories;
+package com.luisborrayo.eventosjakarta.controllers.repositories;
 
-import models.Evento;
+import com.luisborrayo.eventosjakarta.controllers.models.Evento;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,6 @@ public class EventRepository {
     private static final AtomicInteger idCounter = new AtomicInteger(1);
     
     static {
-        // Initialize with some sample events
         eventos.add(new Evento(idCounter.getAndIncrement(), "Conferencia de Tecnología", LocalDate.of(2024, 3, 15), "Centro de Convenciones"));
         eventos.add(new Evento(idCounter.getAndIncrement(), "Workshop de Java", LocalDate.of(2024, 4, 20), "Universidad Nacional"));
         eventos.add(new Evento(idCounter.getAndIncrement(), "Seminario de IA", LocalDate.of(2024, 5, 10), "Hotel Intercontinental"));

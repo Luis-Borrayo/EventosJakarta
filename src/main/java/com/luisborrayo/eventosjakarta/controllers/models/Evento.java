@@ -1,4 +1,4 @@
-package models;
+package com.luisborrayo.eventosjakarta.controllers.models;
 
 import java.time.LocalDate;
 

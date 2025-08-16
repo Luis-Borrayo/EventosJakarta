@@ -1,10 +1,8 @@
-package repositories;
+package com.luisborrayo.eventosjakarta.controllers.repositories;
 
-import models.Usuarios;
+import com.luisborrayo.eventosjakarta.controllers.models.Usuarios;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 public class UserRepository {
     private static final Map<String, Usuarios> users = new HashMap<>();
@@ -17,5 +15,9 @@ public class UserRepository {
 
     public Optional<Usuarios> findByEmail(String email) {
         return Optional.ofNullable(users.get(email));
+    }
+
+    public void save(Usuarios usuario) {
+        users.put(usuario.getCorreo(), usuario);
     }
 }

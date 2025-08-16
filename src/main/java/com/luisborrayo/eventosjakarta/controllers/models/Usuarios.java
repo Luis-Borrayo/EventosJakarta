@@ -1,4 +1,4 @@
-package models;
+package com.luisborrayo.eventosjakarta.controllers.models;
 
 public class Usuarios {
     private final String nombre;
