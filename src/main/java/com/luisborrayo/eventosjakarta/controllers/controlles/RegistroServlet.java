@@ -1,4 +1,4 @@
-package com.luisborrayo.eventosjakarta.controllers.service;
+package com.luisborrayo.eventosjakarta.controllers.controlles;
 
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

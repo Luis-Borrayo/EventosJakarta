@@ -22,7 +22,7 @@ public class EventosServlet extends HttpServlet {
 
         HttpSession session = request.getSession(false);
         if (session == null || session.getAttribute("auth") == null ||
-            !(Boolean) session.getAttribute("auth")) {
+                !(Boolean) session.getAttribute("auth")) {
             response.sendRedirect(request.getContextPath() + "/login.jsp");
             return;
         }
@@ -33,4 +33,4 @@ public class EventosServlet extends HttpServlet {
 
         request.getRequestDispatcher("/eventos.jsp").forward(request, response);
     }
-    }
+}
